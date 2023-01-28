@@ -98,9 +98,13 @@ if(a==b && a==c && b==c){
 }else{
     log("Müxtəlif tərəfli  üçbucaq")
 }
+<<<<<<< HEAD
 
 // 1.  Tələbələrin tapşırığı verilmiş üçbucağın ilk öncə mövcudluğu yoxlanılsın  1.2 əgər bərabər yanlıdırsa sahəsini əgər müxtəlif tərəflidirsə perimetrini əgər  bərəbər tərəflidir cəmi ilə sahəsinin hasilini yazdırın 
  // console.log(typeof(numberOne.toString()))
+=======
+// console.log(typeof(numberOne.toString()))
+>>>>>>> 5cb740c6e15dee6726dc15d653ca934bb2cf1904
 
 
 
