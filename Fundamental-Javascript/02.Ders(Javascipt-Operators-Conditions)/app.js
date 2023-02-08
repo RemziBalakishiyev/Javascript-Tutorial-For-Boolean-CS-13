@@ -32,34 +32,53 @@ const log = console.log;
 
 
 
-// if(true){
-//    log("ifade ishledi")
-// }
+// // if(true){
+// //    log("ifade ishledi")
+// // }
 
-// log("Ifade bitib")
-
-
-// let numberOne = 13;
-// let numberTwo = 12;
-
-// if(numberOne < numberTwo){
-//     log("It`s working!")
-// }else{
-//     log("It isn`t working!")
-// }
+// // log("Ifade bitib")
 
 
-// Heftenin ikinci günü kitab oxuyağımla bağlı , 5 ci günü filme baxacağımla bağlı , bazar günü kod yazacağımla bağlı bildiriş göndersin 
+// // let numberOne = 13;
+// // let numberTwo = 12;
 
-// let dayOfWeek = prompt("Bu gun heftenin neçənci  günüdür?");
-
-// // if(dayOfWeek==2){ // false
-// //     alert("Kitab oxu!")
-// // } else if(dayOfWeek==5){ //true
-// //     alert("Film izle!")
-// // }else if(dayOfWeek==7){ // true
-// //     alert("Kod yaz!!")
+// // if(numberOne < numberTwo){
+// //     log("It`s working!")
 // // }else{
+// //     log("It isn`t working!")
+// // }
+
+
+// // Heftenin ikinci günü kitab oxuyağımla bağlı , 5 ci günü filme baxacağımla bağlı , bazar günü kod yazacağımla bağlı bildiriş göndersin 
+
+// // let dayOfWeek = prompt("Bu gun heftenin neçənci  günüdür?");
+
+// // // if(dayOfWeek==2){ // false
+// // //     alert("Kitab oxu!")
+// // // } else if(dayOfWeek==5){ //true
+// // //     alert("Film izle!")
+// // // }else if(dayOfWeek==7){ // true
+// // //     alert("Kod yaz!!")
+// // // }else{
+    
+// // // }
+// // // alert("Dersini oxu")
+
+
+// // let notificattion="";
+
+
+// // if(dayOfWeek>0  && dayOfWeek<=7){
+
+// //     if(dayOfWeek==2){ // 
+// //         notificattion = "Kitab oxu!"
+// //     } else if(dayOfWeek==5){ //true
+// //         notificattion = "Film izle!"
+// //     }else if(dayOfWeek==7){ // true
+// //         notificattion ="Kod yaz!!"
+// //     }else{
+// //         notificattion = "Dersini oxu";
+// //     }
     
 // // }
 // // alert("Dersini oxu")
@@ -98,13 +117,7 @@ if(a==b && a==c && b==c){
 }else{
     log("Müxtəlif tərəfli  üçbucaq")
 }
-<<<<<<< HEAD
-
-// 1.  Tələbələrin tapşırığı verilmiş üçbucağın ilk öncə mövcudluğu yoxlanılsın  1.2 əgər bərabər yanlıdırsa sahəsini əgər müxtəlif tərəflidirsə perimetrini əgər  bərəbər tərəflidir cəmi ilə sahəsinin hasilini yazdırın 
- // console.log(typeof(numberOne.toString()))
-=======
 // console.log(typeof(numberOne.toString()))
->>>>>>> 5cb740c6e15dee6726dc15d653ca934bb2cf1904
 
 
 
