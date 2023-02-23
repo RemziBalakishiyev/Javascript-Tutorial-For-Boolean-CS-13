@@ -107,6 +107,3 @@ const printHello = (helloText)=>{
 }
 printHello("hi");
 
-// for (const stdKey in student) {
-//     console.log(student[`${stdKey}`])
-// }
