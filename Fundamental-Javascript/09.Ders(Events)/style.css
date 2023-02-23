@@ -1,0 +1,23 @@
+.custom--flex{
+    width: 100%; 
+    min-height:800px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.smile{
+    position:absolute; 
+    left:30%  ; 
+    
+}
+
+.show{
+    display: inline;
+}
+
+.hide{
+    display: none;
+}
