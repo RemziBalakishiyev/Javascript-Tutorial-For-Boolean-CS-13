@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fff7;
+}
+
+.card {
+  width: 500px;
+  height: 280px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f7f1;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-head img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  /* border: 1px solid #ffffff; */
+  top: -24%;
+  transition: all 0.6s ease;
+}
+
+.card-head .bg-img {
+  background-color: #94d2bd;
+  content: ' ';
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -25%;
+  left: 50%;
+  padding: 6px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.6s ease;
+}
+
+.card-head i {
+  position: absolute;
+  top: -23%;
+  left: 38%;
+  z-index: 3;
+  color: #fff;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #94d2bd;
+  transition: all 0.6s ease;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-info h3 {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 17%;
+  transition: all 0.6s ease;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.card-info div {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #8f8f8f;
+  letter-spacing: 1px;
+  font-size: 19px;
+  position: absolute;
+  top: 32%;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.card-info div:hover {
+  color: #292828;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-content p {
+  text-align: center;
+  padding: 3px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 30px;
+}
+
+.card-slider i {
+  font-size: 35px;
+  color: #0a9396;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-slider i:hover {
+  font-size: 35px;
+  color: #57cfd1;
+}
+
+.card-slider i:nth-child(1) {
+  position: absolute;
+  left: 20%;
+}
+
+.card-slider i:nth-child(2) {
+  position: absolute;
+  right: 20%;
+}
+
+button {
+  position: absolute;
+  bottom: -6%;
+  width: 300px;
+  height: 44px;
+  background-color: #0a9396;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+button:hover {
+  background-color: #041a22;
+}
+
+.modal {
+  width: 600px;
+  height: 200px;
+}
+.modal-body {
+  padding: 20px;
+}
+.add-item {
+  width: 100px !important;
+  height: 100px;
+}
