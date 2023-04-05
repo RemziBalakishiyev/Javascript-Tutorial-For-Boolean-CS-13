@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./broker.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light mb-5">
+        <div class="container-fluid " style="padding:0 260px ;">
+            <a class="navbar-brand fw-bold" href="">Boolean Broker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-end w-100 align-items-end"
+                    style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login my-5">
+        <div class="container">
+            <form class="card py-1 ">
+                <div class="row d-flex justify-content-center">
+                    <div class="mb-3 col-4">
+
+                        <input type="text" class="form-control mt-4" id="userName" placeholder="User Name">
+                    </div>
+                    <div class="mb-3 col-4">
+
+                        <input type="password" class="form-control mt-4" id="password" placeholder="Password">
+                    </div>
+                    <div class=" col-2">
+                        <button type="button" class=" login-btn  ">Login</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container section-1 my-5">
+        <div class="row">
+            <div class="col-7 box">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Alış Qiyməti</th>
+                            <th>Satış Qiyməti</th>
+                            <th>Tipi</th>
+                            <th>Nəticə</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>Like a butterfly</td>
+                            <td>Boxing</td>
+                            <td>Aaron Chapman</td>
+                            <td>
+                                <span class="badge p-2 rounded-pill text-bg-success">Danger</span>
+                            </td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4 mx-4">
+                <form class="card p-3 px-5 bg-light">
+                    <div class="mb-3">
+                        <label for="purchase" class="form-label">Purchase Pirce</label>
+                        <input type="number" class="form-control" id="purchase">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="Sale" class="form-label">Sale price</label>
+                        <input type="number" class="form-control" id="Sale">
+                    </div>
+
+                    <button class="btn btn-success" id="addBtn">Add</button>
+                    <button type="submit" class="cutom_button text-light"> <i class="fas fa-chevron-left"></i> </button>
+                    <div class="background_button"> </div>
+                </form>
+
+                <ul class="list-group mt-3 home-list">
+                    <li class="list-group-item">An item</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-2">
+                <span class="income-label result-label">
+                    In
+                </span>
+                <span class="income-value">Gəlir</span>
+            </div>
+            <div class="col-2">
+                <span class="outcome-label result-label">
+                    Out
+                </span>
+                <span class="outcome-value result-value">Gəlir</span>
+            </div>
+            <div class="col-2">
+                <span class="income-label result-label">
+                    Gain
+                </span>
+                <span class="gain-value result-value">Gəlir</span>
+            </div>
+            <div class="col-2">
+                <i class="fas fa-sort"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+<script src="./broker.js"></script>
+s
+
+</html>

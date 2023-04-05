@@ -1,0 +1,132 @@
+.section-1 {
+  opacity: 1;
+  transition: all 1s;
+}
+.fa-sort {
+  font-size: 20px;
+  color: #52b788;
+  cursor: pointer;
+}
+.login-btn {
+  background-color: #52b788 !important;
+  color: white;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  right: 10%;
+  top: 32px;
+}
+.navbar {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.navbar-brand {
+  font-size: 28px !important;
+  color: #52b788 !important;
+}
+.navbar-nav .nav-item a {
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #52b788;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #8d99ae;
+}
+.table {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+.table tr th,
+.table tr td {
+  padding: 20px 50px;
+  border: none !important;
+}
+.table thead {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  background-color: #393939 !important;
+  color: #52b788;
+}
+.table tbody {
+  background-color: #222222;
+  color: #fff;
+}
+
+.cutom_button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #52b788;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+  z-index: 2;
+}
+.background_button {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+  width: 70px;
+  height: 80px;
+  background-color: #fff;
+}
+.box {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+.box::-webkit-scrollbar {
+  width: 10px;
+
+  position: absolute;
+  right: -20px;
+}
+
+.box::-webkit-scrollbar-track {
+  background-color: darkgrey;
+  scroll-behavior: smooth;
+}
+
+.box::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  scroll-behavior: smooth;
+}
+
+.income-label {
+  font-size: 26px;
+  color: #8d99ae;
+}
+.income-value {
+  font-size: 30px;
+  color: #52b788;
+}
+.result-label {
+  font-size: 26px;
+  color: #8d99ae;
+}
+
+.result-value {
+  font-size: 30px;
+}
+
+.outcome-value {
+  color: #ef233c;
+}
+.gain-value {
+  color: #ffb703;
+}
+
+.login {
+  opacity: 0;
+}

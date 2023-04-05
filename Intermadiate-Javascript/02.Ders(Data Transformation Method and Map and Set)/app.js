@@ -134,4 +134,6 @@ let sortedNum = allNumbers.sort((a, b) => {
   console.log(`a : ${a} b : ${b}`);
   return a - b;
 });
-console.log();
+
+const exampleArr = [["Dostoyevski", "Cinayet ve ceza"]];
+console.log(Object.fromEntries(exampleArr));
