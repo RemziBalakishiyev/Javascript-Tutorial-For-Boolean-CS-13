@@ -1,5 +1,5 @@
 .section-1 {
-  opacity: 1;
+  opacity: 0;
   transition: all 1s;
 }
 .fa-sort {
@@ -125,8 +125,4 @@
 }
 .gain-value {
   color: #ffb703;
-}
-
-.login {
-  opacity: 0;
 }
