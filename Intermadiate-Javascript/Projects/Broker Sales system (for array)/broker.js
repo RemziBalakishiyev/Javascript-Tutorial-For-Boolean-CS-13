@@ -16,6 +16,7 @@ const load = document.querySelector(".cutom_button");
 const sort = document.querySelector(".fa-sort");
 
 let homeAdded = [];
+let currentBroker;
 // DATASs
 const broker1 = {
   fullName: "Fariz Huseynov",
@@ -119,10 +120,49 @@ const broker3 = {
 
 const brokers = [broker1, broker2, broker3];
 
+const createPassword = function (brokerList) {
+  brokerList.forEach((broker) => {
+    broker.password = broker.fullName
+      .toLowerCase()
+      .split(" ") // ["Vaqif","Mehdiyev"]
+      .map((name) => name.charAt(0))
+      .join("")
+      .concat(broker.dateOfBirth);
+  });
+  console.log(brokerList);
+};
+
+createPassword(brokers);
+
 //FUNCTIONS
-const showHomeDetails = function (homeDetails) {
-  console.log(homeDetails);
-  homeDetails.forEach((home) => {
+
+const calcSummary = function (homes) {
+  const income = homes
+    .filter((home) => home.salePrice > home.purchasePrice)
+    .map((home) => home.salePrice)
+    .reduce((acc, salePrice) => acc + salePrice);
+
+  incomeValue.textContent = `${income}`;
+
+  const outcome = homes
+    .filter((home) => home.salePrice < home.purchasePrice)
+    .map((home) => home.purchasePrice)
+    .reduce((acc, purchasePrice) => acc + purchasePrice);
+
+  outcomeValue.textContent = `${outcome}`;
+  const gain = homes
+    .map((home) => home.salePrice - home.purchasePrice)
+    .reduce((acc, gainPrice) => acc + gainPrice);
+
+  gainValue.textContent = `${gain}`;
+};
+
+const showHomeDetails = function (homeDetails, isSort) {
+  const homes = isSort
+    ? homeDetails.sort((a, b) => a.salePrice - b.salePrice)
+    : homeDetails;
+  tbody.innerHTML = "";
+  homes.forEach((home) => {
     let type = home.type == 1 ? "Satış" : "Alış";
 
     let result = home.purchasePrice < home.salePrice ? "Qazanc" : "Ziyan";
@@ -163,6 +203,7 @@ const loadHomeList = function (homes) {
 };
 
 const displayHomes = function (currentBroker) {
+  calcSummary(currentBroker.homes);
   showHomeDetails(currentBroker.homes);
   add.addEventListener("click", (e) => {
     e.preventDefault();
@@ -185,9 +226,38 @@ const displayHomes = function (currentBroker) {
       currentBroker.homes = [...currentBroker.homes, ...homeAdded];
       listHome.innerHTML = "<li class='list-group-item'>An item</li>";
       showHomeDetails(currentBroker.homes);
+      calcSummary(currentBroker.homes);
       homeAdded = [];
     }
   });
 };
 
-displayHomes(brokers[2]);
+loginBtn.addEventListener("click", (e) => {
+  if (!brokers.every((x) => x.password)) {
+    alert("Şifrələr təyin olunmayıb");
+    return;
+  }
+
+  if (!brokers.some((x) => x.userName == userNameInp.value)) {
+    alert("İstifadəçi adı doğru deyil");
+    return;
+  }
+
+  currentBroker = brokers.find(
+    (x) => x.userName == userNameInp.value && x.password == passwordInp.value
+  );
+  console.log(currentBroker);
+  if (currentBroker) {
+    loginContainer.style.display = "none";
+    appContainer.style.opacity = 1;
+    displayHomes(currentBroker);
+  }
+});
+
+let isSort = false;
+sort.addEventListener("click", (e) => {
+  e.preventDefault();
+  isSort = !isSort;
+  debugger;
+  showHomeDetails(currentBroker.homes, !isSort);
+});
